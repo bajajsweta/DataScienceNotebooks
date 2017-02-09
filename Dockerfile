@@ -53,7 +53,7 @@ EXPOSE 8888
 
 
 
-COPY /C/Users/sweta/PythonApp/ClassData_Script.py /srv/notebooks/ClassData_Script.py
+# COPY /C/Users/sweta/PythonApp/ClassData_Script.py /srv/notebooks/ClassData_Script.py
 
 WORKDIR /srv/
 
