@@ -59,4 +59,7 @@ WORKDIR /srv/
 
 # RUN mkdir /srv/nb1/
 
-CMD /bin/bash -c 'jupyter notebook --no-browser --ip=* --NotebookApp.password="$PASSWD" "$@"'
+# CMD /bin/bash -c 'jupyter notebook --no-browser --ip=* --NotebookApp.password="$PASSWD" "$@"'
+
+CMD /bin/bash -c 'jupyter notebook --no-browser --ip=* "$@"'
+
