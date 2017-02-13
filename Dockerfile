@@ -48,7 +48,7 @@ RUN dpkg-query -l > /dpkg-query-l.txt \
 EXPOSE 8888
 
 # Add a notebook profile.
-ADD /DataScienceNotebooks/Data Files/ /srv/n2/
+# ADD /DataScienceNotebooks/Data Files/ /srv/n2/
 # RUN mkdir -p -m 700 /root/.jupyter/ && \
 #    echo "c.NotebookApp.ip = '*'" >> /root/.jupyter/ClassData_Script.py
 
