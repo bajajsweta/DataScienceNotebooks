@@ -51,7 +51,7 @@ EXPOSE 8888
 # RUN mkdir -p -m 700 /root/.jupyter/ && \
 #    echo "c.NotebookApp.ip = '*'" >> /root/.jupyter/ClassData_Script.py
 
-
+RUN mkdir -p $HOME/.ipython/profile_default/srv/n3
 
 # COPY /C/Users/sweta/PythonApp/ClassData_Script.py /srv/notebooks/ClassData_Script.py
 
