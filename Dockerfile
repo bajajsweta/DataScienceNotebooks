@@ -46,7 +46,7 @@ RUN dpkg-query -l > /dpkg-query-l.txt \
 
 # for jupyter
 EXPOSE 8888
-
+COPY . /data
 # Add a notebook profile.
 # ADD /DataScienceNotebooks/Data Files/ /srv/n2/
 # RUN mkdir -p -m 700 /root/.jupyter/ && \
