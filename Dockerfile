@@ -30,6 +30,7 @@ RUN pip3 install ipython
 RUN pip3 install jupyter
 RUN pip3 install pandas
 RUN pip3 install scikit-learn
+RUN pip3 install rpy2
 
 
 # configure console
