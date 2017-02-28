@@ -10,6 +10,14 @@ RUN apt-get update && apt-get install -y \
 RUN pip install --upgrade pip
  
 # RUN pip install --upgrade pip
+RUN sudo apt-get install python-requests
+RUN pip install beautifulSoup
+RUN pip install bs4
+RUN pip install pandas
+RUN pip install zip
+RUN pip install boto
+RUN pip install tinys3
+# RUN pip install sys
 
 # install py3
 RUN apt-get update -qq \
@@ -47,7 +55,7 @@ RUN dpkg-query -l > /dpkg-query-l.txt \
 
 # for jupyter
 EXPOSE 8888
-COPY . /data
+COPY . /srv
 # Add a notebook profile.
 # ADD /DataScienceNotebooks/Data Files/ /srv/n2/
 # RUN mkdir -p -m 700 /root/.jupyter/ && \
